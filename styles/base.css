@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');
+
 body,
 html {
     height: 100%;
@@ -5,8 +7,9 @@ html {
     padding: 0;
 }
 
+/* HEADER AND NAV */
 header {
-    background-color: #153954;
+    background-color: #292F38;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -16,6 +19,17 @@ header {
     justify-content: center;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.name {
+    color: #3995f7; 
+}
+
 nav {
     margin: 0;
     padding: 0;
@@ -23,33 +37,37 @@ nav {
 
 .navbar {
     width: 100%;
-    background-color: #333333;
+    background-color: #b9bbc1;
     overflow: auto;
 }
   
 .navbar a {
     float: left;
-    padding: 10px;
-    color: white;
+    padding: 15px;
+    color: black;
     text-decoration: none;
     font-size: 1.7em;
     width: 25%; 
     text-align: center; 
     box-sizing: border-box;
+    font-family: 'noto sans display';
 }
 
 .navbar a:hover {
-    background-color: #2c2c2c;
+    background-color: #3995f7; 
+    transition: all 0.4s ease 0s;
+    color: white;
 }
 
+/* MAIN CARD SECTION */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
     background-color: #fff;
-    padding: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .card1 {
@@ -58,11 +76,12 @@ main {
 
 .card2 {
     grid-column: 3 / 4;
+    
 }
 
 .card1,
 .card2 {
-    background-color: #e6e6ff;
+    background-color: #ffffff;
     border-radius: 8px;
     border: 1px solid #6f6f6f;
     box-shadow: 4px 4px 8px 0;
@@ -70,22 +89,104 @@ main {
 
 .card1 h2,
 .card2 h2 {
-    background-color: #153954;
+    background-color: #292F38;
     color: white;
-    padding: 10px;
+    padding: 20px;
     margin-top: 0;
     margin-bottom: 10px;
     box-sizing: border-box;
     border-radius: 8px 8px 0 0;
     text-align: center;
+    font-size: 28px;
+    font-family: 'noto sans display';
+    font-weight: 500;
 }
 
+.card1 h3 {
+    font-family: 'noto sans display';
+    font-weight: 500;
+}
 
+.card1 p,
+.card2 p {
+    font-size: 22px;
+    text-align: left;
+    padding: 20px;
+    line-height: 1.6;   
+}
+
+.profile-section {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: left;
+    padding: 20px;
+}
+
+.profile-section p {
+    margin-right: 20px; 
+    flex: 1; 
+}
+
+.profile-section img {
+    max-width: 250px; 
+    height: auto; 
+    margin-right: 20px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.info-section {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+.info-section img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; 
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.card1 h3 {
+    text-align: center;
+    width: 100%; 
+    display: block;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 80%;
+}
+
+.card2 ul {
+    padding: 0;               
+    margin-left: 50px; 
+    margin-top: 200px;               
+    font-size: 22px;          
+    line-height: 1.6; 
+    font-family: 'noto sans display';        
+}
+
+.card2 a {
+    text-decoration: none;    
+    color: inherit;          
+}
+
+.card2 a:hover {
+    text-decoration: underline;
+    transition: all 0.4s ease 0s;
+}
+
+/* FOOTER CONTENT */
 footer {
-    background-color: #153954;
+    background-color: #292F38;
     color: white;
     text-align: center;
     padding: 20px 0;
+    font-family: 'noto sans display';
 }
 
 .footer-content {
@@ -102,12 +203,12 @@ footer {
 }
 
 #currentYear {
-    color: #cc6633;
+    color: #3995f7;
 }
 
 #lastModified {
-    color: #cc6633;
+    color: #3995f7;
     margin: 0;
-    font-size: 18px;
+    font-size: 24px;
     margin-top: 10px;
 }
