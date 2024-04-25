@@ -118,6 +118,7 @@ main {
 .card1 h3 {
     font-family: 'noto sans display';
     font-weight: 500;
+    margin-bottom: 0;
 }
 
 .card1 p,
@@ -152,7 +153,8 @@ main {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    padding: 20px; 
+    padding: 0 20px; 
+    margin-bottom: 20px;
 }
 
 .info-section img {
@@ -167,17 +169,18 @@ main {
     width: 100%; 
     display: block;
     font-size: 28px;
-    margin-bottom: 15px;
+    margin: 10px;
 }
 
 hr {
     width: 80%;
+    margin: 0 auto;
 }
 
 .card2 ul {
     padding: 0;               
     margin-left: 50px; 
-    margin-top: 200px;               
+    margin-top: 100px;               
     font-size: 22px;          
     line-height: 1.6; 
     font-family: 'noto sans display';        
